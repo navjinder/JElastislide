@@ -14,4 +14,5 @@ Features:
     - Crousel backgound color
     - Arrow theme and color
 
-Demo: http://demo.navjinder.com/#demo
+Site:  http://demo.navjinder.com/jelastislide-demo
+Demo: http://demo.navjinder.com/jelastislide-demo#demo
