@@ -1,0 +1,50 @@
+/*
+@brief    JElastislide - A Joomla Responsive Image Carousel
+@author   Navjinder Kainthrai
+@version  1.0
+@remarks  Copyright (C) 2013 Navjinder.com (Based on Elastislide by Codrops)
+@license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+@see      http://www.navjinder.com/
+*/
+
+
+
+/*  Interface 
+--------------------------------------------------------------------------------------------------------------------- */
+
+.pane-slider fieldset.panelform label { width: 200px; padding: 2px 5px 2px 0; float: left; line-height: 18px; }
+.pane-slider fieldset.panelform { margin:0; padding-top:20px; padding-bottom:20px; }
+.pane-slider .button2-left, .pane-slider .button2-right { margin-top: 5px; }
+.pane-slider .media-preview { margin-top: 10px; }
+.pane-slider fieldset input, 
+.pane-slider fieldset textarea, 
+.pane-slider fieldset img,
+.pane-slider fieldset select, 
+.pane-slider fieldset button { float: left; margin: 5px 5px 5px 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 220px; padding: 3px; border: 1px solid #D2D2D2; border-radius: 4px; font-size: 12px; }
+.pane-slider fieldset.adminform fieldset.radio input, 
+.pane-slider fieldset.panelform fieldset.radio input  
+{ width: 20px; }
+.pane-slider fieldset.adminform fieldset.radio label, 
+.pane-slider fieldset.panelform fieldset.radio label 
+{ width: 60px; padding: 0 10px 0 0; float: left; clear: none; display: inline; }
+
+
+
+/*  Tabs 
+--------------------------------------------------------------------------------------------------------------------- */
+
+.pane-sliders .panel { margin-bottom: 0; }
+.pane-sliders .panel h3 { background: url(images/panel-bg.png) repeat-x #cccccc; color: #444444; height:36px; line-height: 36px; padding:0 0 0 10px; }
+.pane-sliders .panel h3 a { color: #222222; }
+.pane-toggler span { background: transparent url(images/arrow.png) 4px 50% no-repeat; padding-left: 36px; }
+.pane-toggler-down span { background: transparent url(images/arrow_down.png) 4px 50% no-repeat; padding-left: 36px; }
+h3#style-options a, h3#layout-options a, h3#logo-options a, h3#mobile-options a, h3#analytics-options {	display:block; }
+
+hr { margin:12px 0; border:0; border-top:1px solid #dddddd; border-bottom:1px solid #ffffff; }
+
+
+
+
+
+
+

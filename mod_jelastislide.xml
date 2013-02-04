@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.0"
+	client="site"
+	method="upgrade">
+	<name>JElastislide </name>
+	<author>Navjinder Kainthrai</author>
+	<creationDate>Jan 2013</creationDate> 
+	<authorUrl>http://www.navjinder.com</authorUrl> 
+	<authoremail>mailme@navjinder.com</authoremail>
+	<copyright>Copyright (C) Navjinder.com. some rights reserved.</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>1.0</version>
+	<description>
+	<![CDATA[ 
+<link rel="stylesheet" href="../modules/mod_jelastislide/backend/style.css" type="text/css" />
+<a href="http://demo.navjinder.com/jelastislide-demo" ><img src="../modules/mod_jelastislide/backend/images/logo.png" /></a>
+<p>	<h2>JElastislide</h2> A Joomla Responsive Image Carousel</p>
+<p>Based on Elastislide by <a href="http://tympanus.net/codrops/2011/09/12/elastislide-responsive-carousel/">Codrops</a></p>
+<p>Developed by <a href="http://www.navjinder.com" >Navjinder.com</a></p>
+	]]>
+	</description>
+	<files>
+		<filename module="mod_jelastislide">mod_jelastislide.php</filename>
+		<filename>mod_jelastislide.xml</filename>
+		<filename>index.html</filename>
+		<folder>js</folder>
+		<folder>vari</folder>
+		<folder>images</folder>
+		<folder>backend</folder>
+	</files>
+
+	<media destination="jelastislide">
+        <filename>1.jpg</filename>
+        <filename>2.jpg</filename>
+        <filename>3.jpg</filename>
+        <filename>4.jpg</filename>
+        <filename>5.jpg</filename>
+        <filename>6.jpg</filename>
+        <filename>7.jpg</filename>
+        <filename>8.jpg</filename>
+        <filename>9.jpg</filename>
+        <filename>10.jpg</filename>
+    </media>
+	<help key="JElastislide Responsive Image Crousel" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="jquery"
+					type="list"
+					default="yes"
+					label="jQuery?"
+					description="Do you want to load the jQuery library">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+				</field>				
+
+			<field type="spacer" hr="true" />
+
+
+				<field
+					name="target"
+					type="radio"
+					default="_blank"
+					label="Select the target window for links"
+					description="Select the target window type">
+					<option	value="_blank">New Window</option>
+					<option	value="_self">Same Window</option>
+					<option	value="_parent">Parent Window</option>
+				</field>
+
+				<field
+					name="orientation"
+					type="radio"
+					default="horizontal"
+					label="Crousel Orientation"
+					description="Toggle position horizontal or vertical">
+					<option	value="vertical">vertical</option>
+					<option	value="horizontal">horizontal</option>
+				</field>
+				
+				<field
+					name="minValue"
+					type="text"
+					default="3"
+					label="minimum number of images is always visible"
+					description="Enter the value between 1 to 10" />
+					
+				<field
+					name="backGround"
+					type="text"
+					default="cccccc"
+					label="Color of the crousel background: #"
+					description="Enter the Hex value without #" />
+					
+				<field
+					name="arrowTheme"
+					type="radio"
+					default="light"
+					label="Arrow theme"
+					description="Toggle color of arrow">
+					<option	value="light">Dark</option>
+					<option	value="dark">Light</option>
+				</field>
+				
+				<field
+					name="arrowColor"
+					type="text"
+					default="a6a6a6"
+					label="Color of the arrow background: #"
+					description="Enter the hex value without #" />
+
+			<field type="spacer" hr="true" />
+			
+			<field
+					name="credits"
+					type="list"
+					default="yes"
+					label="Show Credit"
+					description="Do you want to show the credit link">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+				</field>	
+			</fieldset>
+			<fieldset name="advanced">
+				
+				<field
+					name="file1active"
+					type="radio"
+					default="yes"
+					label="Show Slide 1"
+					description="Choose if the slide should be displayed or not.">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+					</field>
+				<field
+					name="file1"
+					type="text"
+					default="media/jelastislide/1.jpg"
+					label="Slide 1 Location"
+					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+
+				<field
+					name="file1link"
+					type="text"
+					default="http://www.navjinder.com"
+					label="Slide 1 Link"
+					description="URL for this slide" />
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="file2active"
+					type="radio"
+					default="yes"
+					label="Show Slide 2"
+					description="Choose if the slide should be displayed or not">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+					</field>
+	
+				<field
+					name="file2"
+					type="text"
+					default="media/jelastislide/2.jpg"
+					label="Slide 2 Location"
+					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+
+				<field
+					name="file2link"
+					type="text"
+					default="http://www.navjinder.com"
+					label="Slide 2 Link"
+					description="URL for this slide" />
+
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="file3active"
+					type="radio"
+					default="yes"
+					label="Show Slide 3"
+					description="Choose if the slide should be displayed or not">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+					</field>
+	
+				<field
+					name="file3"
+					type="text"
+					default="media/jelastislide/3.jpg"
+					label="Slide 3 Location"
+					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+
+				<field
+					name="file3link"
+					type="text"
+					default="http://www.navjinder.com"
+					label="Slide 3 Link"
+					description="URL for this slide" />
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="file4active"
+					type="radio"
+					default="yes"
+					label="Show Slide 4"
+					description="Choose if the slide should be displayed or not">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+					</field>
+	
+				<field
+					name="file4"
+					type="text"
+					default="media/jelastislide/4.jpg"
+					label="Slide 4 Location"
+					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+
+				<field
+					name="file4link"
+					type="text"
+					default="http://www.navjinder.com"
+					label="Slide 4 Link"
+					description="URL for this slide" />
+
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="file5active"
+					type="radio"
+					default="yes"
+					label="Show Slide 5"
+					description="Choose if the slide should be displayed or not">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+					</field>
+	
+				<field
+					name="file5"
+					type="text"
+					default="media/jelastislide/5.jpg"
+					label="Slide 5 Location"
+					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+
+				<field
+					name="file5link"
+					type="text"
+					default="http://www.navjinder.com"
+					label="Slide 5 Link"
+					description="URL for this slide" />
+
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="file6active"
+					type="radio"
+					default="yes"
+					label="Show Slide 6"
+					description="Choose if the slide should be displayed or not">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+					</field>
+	
+				<field
+					name="file6"
+					type="text"
+					default="media/jelastislide/6.jpg"
+					label="Slide 6 Location"
+					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+
+				<field
+					name="file6link"
+					type="text"
+					default="http://www.navjinder.com"
+					label="Slide 6 Link"
+					description="URL for this slide" />
+
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="file7active"
+					type="radio"
+					default="no"
+					label="Show Slide 7"
+					description="Choose if the slide should be displayed or not">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+					</field>
+	
+				<field
+					name="file7"
+					type="text"
+					label="Slide 7 Location"
+					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+
+				<field
+					name="file7link"
+					type="text"
+					label="Slide 7 Link"
+					description="URL for this slide" />
+
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="file8active"
+					type="radio"
+					default="no"
+					label="Show Slide 8"
+					description="Choose if the slide should be displayed or not">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+					</field>
+			
+				<field
+					name="file8"
+					type="text"
+					label="Slide 8 Location"
+					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+
+				<field
+					name="file8link"
+					type="text"
+					label="Slide 8 Link"
+					description="URL for this slide" />
+
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="file9active"
+					type="radio"
+					default="no"
+					label="Show Slide 9"
+					description="Choose if the slide should be displayed or not">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+					</field>
+	
+				<field
+					name="file9"
+					type="text"
+					label="Slide 9 Location"
+					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+
+				<field
+					name="file9link"
+					type="text"
+					label="Slide 9 Link"
+					description="URL for this slide" />
+
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="file10active"
+					type="radio"
+					default="no"
+					label="Show Slide 10"
+					description="Choose if the slide should be displayed or not">
+					<option	value="yes">Yes</option>
+					<option	value="no">No</option>
+					</field>
+	
+				<field
+					name="file10"
+					type="text"
+					label="Slide 10 Location"
+					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+
+				<field
+					name="file10link"
+					type="text"
+					label="Slide 10 Link"
+					description="URL for this slide" />
+
+
+			<field type="spacer" hr="true" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>
