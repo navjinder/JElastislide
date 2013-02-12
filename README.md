@@ -13,6 +13,9 @@ Features:
     - Minimum number of images always visible
     - Crousel backgound color
     - Arrow theme and color
+    - Color Picker (v2.0)
+    - Image Modal (v2.0)
+    - Different image for thumbnail and image (v2.0)
 
 Site:  http://demo.navjinder.com/jelastislide-demo
 Demo: http://demo.navjinder.com/jelastislide-demo#demo
