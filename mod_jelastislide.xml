@@ -89,8 +89,8 @@
 					default="light"
 					label="Arrow Theme"
 					description="Toggle color of arrow">
-					<option	value="light">Dark</option>
-					<option	value="dark">Light</option>
+					<option	value="light">Light</option>
+					<option	value="dark">Dark</option>
 				</field>
 				
 				<field
