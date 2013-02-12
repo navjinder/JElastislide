@@ -5,14 +5,18 @@
 * @author   Navjinder Kainthrai
 * @version  1.0
 * @remarks  Copyright (C) 2013 Navjinder.com (Based on Elastislide by Codrops)
-* @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+* @license		GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
 * @see      http://www.navjinder.com/
 */
 
 // no direct access
 defined('_JEXEC') or die;
+
+// Loading Parameters
 $root = JURI::root();
 $orientation = $params->get('orientation');
+$modal = $params->get('modal');
+$largeoption = $params->get('largeoption');
 $background = $params->get('backGround');
 $arrowtheme = $params->get('arrowTheme');
 $target = $params->get('target');
@@ -26,11 +30,13 @@ JHtml::script($root.'modules/mod_jelastislide/js/modernizr.custom.17475.js');
 if ($jquery != "no") {JHtml::script('http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js');}
 JHtml::script($root.'modules/mod_jelastislide/js/jquerypp.custom.js');
 JHtml::script($root.'modules/mod_jelastislide/js/jquery.elastislide.js');
+if ($modal != "no") {JHtml::_('behavior.modal');}
 $doc->addStyleSheet($root.'modules/mod_jelastislide/vari/elastislide.css');
 for ($i=1;$i<=10;$i++) {
 
 ${'file'.$i} = $params->get('file'.$i);
 ${'file'.$i.'active'} = $params->get('file'.$i.'active');
+${'file'.$i.'large'} = $params->get('file'.$i.'large');
 ${'file'.$i.'link'} = $params->get('file'.$i.'link');
 
 }
@@ -45,7 +51,18 @@ ${'file'.$i.'link'} = $params->get('file'.$i.'link');
 			 <?php for ($i=1;$i<=10;$i++) { if (${'file'.$i} && ${'file'.$i.'active'} == "yes" && ${'file'.$i} != " ") {?>
 			
 		    	<li >
+				<?php if ($modal == "no") { ?>
+				
 				<?php if (${'file'.$i.'link'}) { ?> <a href="<?php echo ${'file'.$i.'link'}; ?>" target="<?php echo $target ?>"><img src="<?php echo ${'file'.$i}; ?>" /></a><?php } else { ?> <img src="<?php echo ${'file'.$i}; ?>" /> <?php } ?>
+				<?php } else { ?>
+				
+						<?php if ($largeoption == "no") { ?>
+						<a class="modal"  href="<?php echo ${'file'.$i}; ?>" ><img src="<?php echo ${'file'.$i}; ?>" /></a>
+						<?php } else { ?>
+						<a class="modal"  href="<?php echo ${'file'.$i.'large'}; ?>" ><img src="<?php echo ${'file'.$i}; ?>" /></a>
+						<?php } ?>
+
+				<?php } ?>
 		    	</li>
 			
 		<?php } ?>  <?php } ?>
@@ -61,10 +78,10 @@ ${'file'.$i.'link'} = $params->get('file'.$i.'link');
 </script>
 <style>
 .jelastic<?php echo $moduid ?> .elastislide-wrapper {
- background-color: #<?php echo $background; ?>;
+ background-color: <?php echo $background; ?>;
 }
 .jelastic<?php echo $moduid ?> .elastislide-wrapper nav span {
-	background: #<?php echo $arrowcolor ?> url('<?php echo $root ?>modules/mod_jelastislide/images/nav<?php echo $arrowtheme ?>.png') no-repeat 4px 3px;
+	background: <?php echo $arrowcolor ?> url('<?php echo $root ?>modules/mod_jelastislide/images/nav<?php echo $arrowtheme ?>.png') no-repeat 4px 3px;
 	
 }
 

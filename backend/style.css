@@ -3,7 +3,7 @@
 @author   Navjinder Kainthrai
 @version  1.0
 @remarks  Copyright (C) 2013 Navjinder.com (Based on Elastislide by Codrops)
-@license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+@license  GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
 @see      http://www.navjinder.com/
 */
 
@@ -40,7 +40,7 @@
 .pane-toggler-down span { background: transparent url(images/arrow_down.png) 4px 50% no-repeat; padding-left: 36px; }
 h3#style-options a, h3#layout-options a, h3#logo-options a, h3#mobile-options a, h3#analytics-options {	display:block; }
 
-hr { margin:12px 0; border:0; border-top:1px solid #dddddd; border-bottom:1px solid #ffffff; }
+hr { margin:15px 0; border:0; border-top:1px solid #dddddd; border-bottom:1px solid #ffffff; }
 
 
 

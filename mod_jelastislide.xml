@@ -10,7 +10,7 @@
 	<authorUrl>http://www.navjinder.com</authorUrl> 
 	<authoremail>mailme@navjinder.com</authoremail>
 	<copyright>Copyright (C) Navjinder.com. some rights reserved.</copyright>
-	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<license>GNU/GPL license: http://www.gnu.org/copyleft/gpl.html</license>
 	<version>1.0</version>
 	<description>
 	<![CDATA[ 
@@ -59,24 +59,12 @@
 
 			<field type="spacer" hr="true" />
 
-
-				<field
-					name="target"
-					type="radio"
-					default="_blank"
-					label="Select the target window for links"
-					description="Select the target window type">
-					<option	value="_blank">New Window</option>
-					<option	value="_self">Same Window</option>
-					<option	value="_parent">Parent Window</option>
-				</field>
-
 				<field
 					name="orientation"
 					type="radio"
 					default="horizontal"
 					label="Crousel Orientation"
-					description="Toggle position horizontal or vertical">
+					description="Horizontal or Vertical">
 					<option	value="vertical">vertical</option>
 					<option	value="horizontal">horizontal</option>
 				</field>
@@ -85,21 +73,21 @@
 					name="minValue"
 					type="text"
 					default="3"
-					label="minimum number of images is always visible"
+					label="Minimum Number of Images Always Visible"
 					description="Enter the value between 1 to 10" />
-					
+
 				<field
 					name="backGround"
-					type="text"
-					default="cccccc"
-					label="Color of the crousel background: #"
-					description="Enter the Hex value without #" />
+					type="color"
+					default="#cccccc"
+					label="Color of the Crousel Background:"
+					description="Enter the Hex value or choose from color picker" />
 					
 				<field
 					name="arrowTheme"
 					type="radio"
 					default="light"
-					label="Arrow theme"
+					label="Arrow Theme"
 					description="Toggle color of arrow">
 					<option	value="light">Dark</option>
 					<option	value="dark">Light</option>
@@ -107,11 +95,44 @@
 				
 				<field
 					name="arrowColor"
-					type="text"
-					default="a6a6a6"
-					label="Color of the arrow background: #"
-					description="Enter the hex value without #" />
+					type="color"
+					default="#a6a6a6"
+					label="Color of the Arrow Background: "
+					description="Enter the Hex value or choose from color picker" />
 
+			<field type="spacer" hr="true" />
+			
+			<field
+					name="modal"
+					type="radio"
+					default="yes"
+					label="Use Modal/Links Functionality?"
+					description="Do you want use Link Feature or Image Modal">
+					<option	value="yes">Show Image Modal</option>
+					<option	value="no">Links</option>
+				</field>	
+			
+			<field
+					name="largeoption"
+					type="radio"
+					default="no"
+					label="Do you want to use Different Modal Image or Same"
+					description="Use Modal Image Large Location for popup or the same Image">
+					<option	value="yes">Different</option>
+					<option	value="no">Same</option>
+				</field>	
+				
+				<field
+					name="target"
+					type="radio"
+					default="_blank"
+					label="Select the target window for links"
+					description="Select the target window type if links option is selected">
+					<option	value="_blank">New Window</option>
+					<option	value="_self">Same Window</option>
+					<option	value="_parent">Parent Window</option>
+				</field>
+				
 			<field type="spacer" hr="true" />
 			
 			<field
@@ -119,7 +140,7 @@
 					type="list"
 					default="yes"
 					label="Show Credit"
-					description="Do you want to show the credit link">
+					description="Do you want to Show the Credit Link">
 					<option	value="yes">Yes</option>
 					<option	value="no">No</option>
 				</field>	
@@ -140,6 +161,13 @@
 					type="text"
 					default="media/jelastislide/1.jpg"
 					label="Slide 1 Location"
+					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					
+				<field
+					name="file1large"
+					type="text"
+					default="media/jelastislide/1_large.jpg"
+					label="Modal 1 Image Large Location"
 					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
 
 				<field
@@ -166,6 +194,13 @@
 					type="text"
 					default="media/jelastislide/2.jpg"
 					label="Slide 2 Location"
+					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+				
+				<field
+					name="file2large"
+					type="text"
+					default="media/jelastislide/2_large.jpg"
+					label="Modal 2 Image Large Location"
 					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
 
 				<field
@@ -194,6 +229,13 @@
 					default="media/jelastislide/3.jpg"
 					label="Slide 3 Location"
 					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					
+				<field
+					name="file3large"
+					type="text"
+					default="media/jelastislide/3_large.jpg"
+					label="Modal 3 Image Large Location"
+					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
 
 				<field
 					name="file3link"
@@ -219,6 +261,13 @@
 					type="text"
 					default="media/jelastislide/4.jpg"
 					label="Slide 4 Location"
+					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					
+				<field
+					name="file4large"
+					type="text"
+					default="media/jelastislide/5_large.jpg"
+					label="Modal 4 Image Large Location"
 					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
 
 				<field
@@ -247,6 +296,13 @@
 					default="media/jelastislide/5.jpg"
 					label="Slide 5 Location"
 					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					
+				<field
+					name="file5large"
+					type="text"
+					default="media/jelastislide/5_large.jpg"
+					label="Modal 5 Image Large Location"
+					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
 
 				<field
 					name="file5link"
@@ -274,6 +330,13 @@
 					default="media/jelastislide/6.jpg"
 					label="Slide 6 Location"
 					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					
+				<field
+					name="file6large"
+					type="text"
+					default="media/jelastislide/6_large.jpg"
+					label="Modal 6Image Large Location"
+					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
 
 				<field
 					name="file6link"
@@ -300,6 +363,12 @@
 					type="text"
 					label="Slide 7 Location"
 					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					
+				<field
+					name="file7large"
+					type="text"
+					label="Modal 7 Image Large Location"
+					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
 
 				<field
 					name="file7link"
@@ -324,6 +393,12 @@
 					name="file8"
 					type="text"
 					label="Slide 8 Location"
+					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					
+				<field
+					name="file8large"
+					type="text"
+					label="Modal 8 Image Large Location"
 					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
 
 				<field
@@ -350,6 +425,12 @@
 					type="text"
 					label="Slide 9 Location"
 					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					
+				<field
+					name="file9large"
+					type="text"
+					label="Modal 9 Image Large Location"
+					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
 
 				<field
 					name="file9link"
@@ -374,6 +455,12 @@
 					name="file10"
 					type="text"
 					label="Slide 10 Location"
+					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					
+				<field
+					name="file10large"
+					type="text"
+					label="Modal 10 Image Large Location"
 					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
 
 				<field
