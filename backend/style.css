@@ -1,7 +1,7 @@
 /*
 @brief    JElastislide - A Joomla Responsive Image Carousel
 @author   Navjinder Kainthrai
-@version  1.0
+@version  2.2
 @remarks  Copyright (C) 2013 Navjinder.com (Based on Elastislide by Codrops)
 @license  GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
 @see      http://www.navjinder.com/
@@ -13,6 +13,7 @@
 --------------------------------------------------------------------------------------------------------------------- */
 
 .pane-slider fieldset.panelform label { width: 200px; padding: 2px 5px 2px 0; float: left; line-height: 18px; }
+.control-label,.control-label { width: 220px !important; padding: 2px 5px 2px 0; float: left; line-height: 18px; }
 .pane-slider fieldset.panelform { margin:0; padding-top:20px; padding-bottom:20px; }
 .pane-slider .button2-left, .pane-slider .button2-right { margin-top: 5px; }
 .pane-slider .media-preview { margin-top: 10px; }

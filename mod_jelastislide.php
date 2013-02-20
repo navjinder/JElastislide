@@ -3,7 +3,7 @@
 * @file
 * @brief    JElastislide - A Joomla Responsive Image Carousel
 * @author   Navjinder Kainthrai
-* @version  1.0
+* @version  2.2
 * @remarks  Copyright (C) 2013 Navjinder.com (Based on Elastislide by Codrops)
 * @license		GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
 * @see      http://www.navjinder.com/
