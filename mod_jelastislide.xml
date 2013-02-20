@@ -26,11 +26,14 @@
 		<filename>mod_jelastislide.xml</filename>
 		<filename>index.html</filename>
 		<folder>js</folder>
+		<folder>language</folder>
 		<folder>vari</folder>
 		<folder>images</folder>
 		<folder>backend</folder>
 	</files>
-
+    <languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_jelastislide.ini</language>
+	</languages>
 	<media destination="jelastislide">
         <filename>1.jpg</filename>
         <filename>2.jpg</filename>
@@ -51,10 +54,10 @@
 					name="jquery"
 					type="list"
 					default="yes"
-					label="jQuery?"
-					description="Do you want to load the jQuery library">
-					<option	value="yes">Yes</option>
-					<option	value="no">No</option>
+					label="MOD_JELASTISLIDE_OPTION_JQUERY_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_JQUERY_DESC">
+					<option	value="yes">MOD_JELASTISLIDE_OPTION_JQUERY_YES</option>
+					<option	value="no">MOD_JELASTISLIDE_OPTION_JQUERY_NO</option>
 				</field>				
 
 			<field type="spacer" hr="true" />
@@ -63,42 +66,42 @@
 					name="orientation"
 					type="radio"
 					default="horizontal"
-					label="Crousel Orientation"
-					description="Horizontal or Vertical">
-					<option	value="vertical">vertical</option>
-					<option	value="horizontal">horizontal</option>
+					label="MOD_JELASTISLIDE_OPTION_ORIENTATION_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_ORIENTATION_DESC">
+					<option	value="vertical">MOD_JELASTISLIDE_OPTION_ORIENTATION_VERTICAL</option>
+					<option	value="horizontal">MOD_JELASTISLIDE_OPTION_ORIENTATION_HORIZONTAL</option>
 				</field>
 				
 				<field
 					name="minValue"
 					type="text"
 					default="3"
-					label="Minimum Number of Images Always Visible"
-					description="Enter the value between 1 to 10" />
+					label="MOD_JELASTISLIDE_OPTION_IMAGEVALUE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_IMAGEVALUE_DESC" />
 
 				<field
 					name="backGround"
 					type="color"
 					default="#cccccc"
-					label="Color of the Crousel Background:"
-					description="Enter the Hex value or choose from color picker" />
+					label="MOD_JELASTISLIDE_COLOR_BACKGROUND_LABEL"
+					description="MOD_JELASTISLIDE_COLOR_BACKGROUND_DESC" />
 					
 				<field
 					name="arrowTheme"
 					type="radio"
 					default="light"
-					label="Arrow Theme"
-					description="Toggle color of arrow">
-					<option	value="light">Light</option>
-					<option	value="dark">Dark</option>
+					label="MOD_JELASTISLIDE_OPTION_ARROW_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_ARROW_DESC">
+					<option	value="light">MOD_JELASTISLIDE_OPTION_ARROW_LIGHT</option>
+					<option	value="dark">MOD_JELASTISLIDE_OPTION_ARROW_DARK</option>
 				</field>
 				
 				<field
 					name="arrowColor"
 					type="color"
 					default="#a6a6a6"
-					label="Color of the Arrow Background: "
-					description="Enter the Hex value or choose from color picker" />
+					label="MOD_JELASTISLIDE_COLOR_ARROW_LABEL"
+					description="MOD_JELASTISLIDE_COLOR_ARROW_DESC" />
 
 			<field type="spacer" hr="true" />
 			
@@ -106,31 +109,31 @@
 					name="modal"
 					type="radio"
 					default="yes"
-					label="Use Modal/Links Functionality?"
-					description="Do you want use Link Feature or Image Modal">
-					<option	value="yes">Show Image Modal</option>
-					<option	value="no">Links</option>
+					label="MOD_JELASTISLIDE_OPTION_MODALLINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_MODALLINK_DESC">
+					<option	value="yes">MOD_JELASTISLIDE_OPTION_MODALLINK_MODAL</option>
+					<option	value="no">MOD_JELASTISLIDE_OPTION_MODALLINK_LINK</option>
 				</field>	
 			
 			<field
 					name="largeoption"
 					type="radio"
 					default="no"
-					label="Do you want to use Different Modal Image or Same"
-					description="Use Modal Image Large Location for popup or the same Image">
-					<option	value="yes">Different</option>
-					<option	value="no">Same</option>
+					label="MOD_JELASTISLIDE_OPTION_LARGE_IMAGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_LARGE_IMAGE_DESC">
+					<option	value="yes">MOD_JELASTISLIDE_OPTION_LARGE_IMAGE_DIFFERENT</option>
+					<option	value="no">MOD_JELASTISLIDE_OPTION_LARGE_IMAGE_SAME</option>
 				</field>	
 				
 				<field
 					name="target"
 					type="radio"
 					default="_blank"
-					label="Select the target window for links"
-					description="Select the target window type if links option is selected">
-					<option	value="_blank">New Window</option>
-					<option	value="_self">Same Window</option>
-					<option	value="_parent">Parent Window</option>
+					label="MOD_JELASTISLIDE_OPTION_TARGET_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_TARGET_DESC">
+					<option	value="_blank">MOD_JELASTISLIDE_OPTION_TARGET_NEW</option>
+					<option	value="_self">MOD_JELASTISLIDE_OPTION_TARGET_SELF</option>
+					<option	value="_parent">MOD_JELASTISLIDE_OPTION_TARGET_PARENT</option>
 				</field>
 				
 			<field type="spacer" hr="true" />
@@ -139,20 +142,20 @@
 					name="credits"
 					type="list"
 					default="yes"
-					label="Show Credit"
-					description="Do you want to Show the Credit Link">
-					<option	value="yes">Yes</option>
-					<option	value="no">No</option>
+					label="MOD_JELASTISLIDE_OPTION_CREDITS_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_CREDITS_DESC">
+					<option	value="yes">MOD_JELASTISLIDE_OPTION_CREDITS_YES</option>
+					<option	value="no">MOD_JELASTISLIDE_OPTION_CREDITS_NO</option>
 				</field>	
 			</fieldset>
-			<fieldset name="advanced">
+			<fieldset name="SLIDE">
 				
 				<field
 					name="file1active"
 					type="radio"
 					default="yes"
-					label="Show Slide 1"
-					description="Choose if the slide should be displayed or not.">
+					label="MOD_JELASTISLIDE_OPTION_SLIDE1_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_DESC">
 					<option	value="yes">Yes</option>
 					<option	value="no">No</option>
 					</field>
@@ -160,22 +163,22 @@
 					name="file1"
 					type="text"
 					default="media/jelastislide/1.jpg"
-					label="Slide 1 Location"
-					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE1_LOC_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 					
 				<field
 					name="file1large"
 					type="text"
 					default="media/jelastislide/1_large.jpg"
-					label="Modal 1 Image Large Location"
-					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE1_LARGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 
 				<field
 					name="file1link"
 					type="text"
 					default="http://www.navjinder.com"
-					label="Slide 1 Link"
-					description="URL for this slide" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE1_LINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LINK_DESC" />
 
 			<field type="spacer" hr="true" />
 
@@ -183,8 +186,8 @@
 					name="file2active"
 					type="radio"
 					default="yes"
-					label="Show Slide 2"
-					description="Choose if the slide should be displayed or not">
+					label="MOD_JELASTISLIDE_OPTION_SLIDE2_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_DESC">
 					<option	value="yes">Yes</option>
 					<option	value="no">No</option>
 					</field>
@@ -193,22 +196,22 @@
 					name="file2"
 					type="text"
 					default="media/jelastislide/2.jpg"
-					label="Slide 2 Location"
-					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE2_LOC_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 				
 				<field
 					name="file2large"
 					type="text"
 					default="media/jelastislide/2_large.jpg"
-					label="Modal 2 Image Large Location"
-					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE2_LARGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 
 				<field
 					name="file2link"
 					type="text"
 					default="http://www.navjinder.com"
-					label="Slide 2 Link"
-					description="URL for this slide" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE2_LINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LINK_DESC" />
 
 
 			<field type="spacer" hr="true" />
@@ -217,8 +220,8 @@
 					name="file3active"
 					type="radio"
 					default="yes"
-					label="Show Slide 3"
-					description="Choose if the slide should be displayed or not">
+					label="MOD_JELASTISLIDE_OPTION_SLIDE3_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_DESC">
 					<option	value="yes">Yes</option>
 					<option	value="no">No</option>
 					</field>
@@ -227,22 +230,22 @@
 					name="file3"
 					type="text"
 					default="media/jelastislide/3.jpg"
-					label="Slide 3 Location"
-					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE3_LOC_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 					
 				<field
 					name="file3large"
 					type="text"
 					default="media/jelastislide/3_large.jpg"
-					label="Modal 3 Image Large Location"
-					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE3_LARGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 
 				<field
 					name="file3link"
 					type="text"
 					default="http://www.navjinder.com"
-					label="Slide 3 Link"
-					description="URL for this slide" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE3_LINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LINK_DESC" />
 
 			<field type="spacer" hr="true" />
 
@@ -250,8 +253,8 @@
 					name="file4active"
 					type="radio"
 					default="yes"
-					label="Show Slide 4"
-					description="Choose if the slide should be displayed or not">
+					label="MOD_JELASTISLIDE_OPTION_SLIDE4_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_DESC">
 					<option	value="yes">Yes</option>
 					<option	value="no">No</option>
 					</field>
@@ -260,22 +263,22 @@
 					name="file4"
 					type="text"
 					default="media/jelastislide/4.jpg"
-					label="Slide 4 Location"
-					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE4_LOC_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 					
 				<field
 					name="file4large"
 					type="text"
 					default="media/jelastislide/5_large.jpg"
-					label="Modal 4 Image Large Location"
-					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE4_LARGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 
 				<field
 					name="file4link"
 					type="text"
 					default="http://www.navjinder.com"
-					label="Slide 4 Link"
-					description="URL for this slide" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE4_LINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LINK_DESC" />
 
 
 			<field type="spacer" hr="true" />
@@ -284,8 +287,8 @@
 					name="file5active"
 					type="radio"
 					default="yes"
-					label="Show Slide 5"
-					description="Choose if the slide should be displayed or not">
+					label="MOD_JELASTISLIDE_OPTION_SLIDE5_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_DESC">
 					<option	value="yes">Yes</option>
 					<option	value="no">No</option>
 					</field>
@@ -294,22 +297,22 @@
 					name="file5"
 					type="text"
 					default="media/jelastislide/5.jpg"
-					label="Slide 5 Location"
-					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE5_LOC_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 					
 				<field
 					name="file5large"
 					type="text"
 					default="media/jelastislide/5_large.jpg"
-					label="Modal 5 Image Large Location"
-					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE5_LARGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 
 				<field
 					name="file5link"
 					type="text"
 					default="http://www.navjinder.com"
-					label="Slide 5 Link"
-					description="URL for this slide" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE5_LINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LINK_DESC" />
 
 
 			<field type="spacer" hr="true" />
@@ -318,8 +321,8 @@
 					name="file6active"
 					type="radio"
 					default="yes"
-					label="Show Slide 6"
-					description="Choose if the slide should be displayed or not">
+					label="MOD_JELASTISLIDE_OPTION_SLIDE6_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_DESC">
 					<option	value="yes">Yes</option>
 					<option	value="no">No</option>
 					</field>
@@ -328,22 +331,22 @@
 					name="file6"
 					type="text"
 					default="media/jelastislide/6.jpg"
-					label="Slide 6 Location"
-					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE6_LOC_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 					
 				<field
 					name="file6large"
 					type="text"
 					default="media/jelastislide/6_large.jpg"
-					label="Modal 6Image Large Location"
-					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE6_LARGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 
 				<field
 					name="file6link"
 					type="text"
 					default="http://www.navjinder.com"
-					label="Slide 6 Link"
-					description="URL for this slide" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE6_LINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LINK_DESC" />
 
 
 			<field type="spacer" hr="true" />
@@ -352,8 +355,8 @@
 					name="file7active"
 					type="radio"
 					default="no"
-					label="Show Slide 7"
-					description="Choose if the slide should be displayed or not">
+					label="MOD_JELASTISLIDE_OPTION_SLIDE7_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_DESC">
 					<option	value="yes">Yes</option>
 					<option	value="no">No</option>
 					</field>
@@ -361,20 +364,20 @@
 				<field
 					name="file7"
 					type="text"
-					label="Slide 7 Location"
-					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE7_LOC_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 					
 				<field
 					name="file7large"
 					type="text"
-					label="Modal 7 Image Large Location"
-					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE7_LARGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 
 				<field
 					name="file7link"
 					type="text"
-					label="Slide 7 Link"
-					description="URL for this slide" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE7_LINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LINK_DESC" />
 
 
 			<field type="spacer" hr="true" />
@@ -383,8 +386,8 @@
 					name="file8active"
 					type="radio"
 					default="no"
-					label="Show Slide 8"
-					description="Choose if the slide should be displayed or not">
+					label="MOD_JELASTISLIDE_OPTION_SLIDE8_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_DESC">
 					<option	value="yes">Yes</option>
 					<option	value="no">No</option>
 					</field>
@@ -392,20 +395,20 @@
 				<field
 					name="file8"
 					type="text"
-					label="Slide 8 Location"
-					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE8_LOC_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 					
 				<field
 					name="file8large"
 					type="text"
-					label="Modal 8 Image Large Location"
-					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE8_LARGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 
 				<field
 					name="file8link"
 					type="text"
-					label="Slide 8 Link"
-					description="URL for this slide" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE8_LINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LINK_DESC" />
 
 
 			<field type="spacer" hr="true" />
@@ -414,8 +417,8 @@
 					name="file9active"
 					type="radio"
 					default="no"
-					label="Show Slide 9"
-					description="Choose if the slide should be displayed or not">
+					label="MOD_JELASTISLIDE_OPTION_SLIDE9_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_DESC">
 					<option	value="yes">Yes</option>
 					<option	value="no">No</option>
 					</field>
@@ -423,20 +426,20 @@
 				<field
 					name="file9"
 					type="text"
-					label="Slide 9 Location"
-					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE9_LOC_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 					
 				<field
 					name="file9large"
 					type="text"
-					label="Modal 9 Image Large Location"
-					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE9_LARGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 
 				<field
 					name="file9link"
 					type="text"
-					label="Slide 9 Link"
-					description="URL for this slide" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE9_LINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LINK_DESC" />
 
 
 			<field type="spacer" hr="true" />
@@ -445,8 +448,8 @@
 					name="file10active"
 					type="radio"
 					default="no"
-					label="Show Slide 10"
-					description="Choose if the slide should be displayed or not">
+					label="MOD_JELASTISLIDE_OPTION_SLIDE10_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_DESC">
 					<option	value="yes">Yes</option>
 					<option	value="no">No</option>
 					</field>
@@ -454,20 +457,20 @@
 				<field
 					name="file10"
 					type="text"
-					label="Slide 10 Location"
-					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE10_LOC_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 					
 				<field
 					name="file10large"
 					type="text"
-					label="Modal 10 Image Large Location"
-					description="Full path of the image file, without the leading slash (ex.: images/myfile.jpg)" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE10_LARGE_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 
 				<field
 					name="file10link"
 					type="text"
-					label="Slide 10 Link"
-					description="URL for this slide" />
+					label="MOD_JELASTISLIDE_OPTION_SLIDE10_LINK_LABEL"
+					description="MOD_JELASTISLIDE_OPTION_SLIDE_LINK_DESC" />
 
 
 			<field type="spacer" hr="true" />
