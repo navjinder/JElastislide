@@ -161,14 +161,14 @@
 					</field>
 				<field
 					name="file1"
-					type="text"
+					type="media"
 					default="media/jelastislide/1.jpg"
 					label="MOD_JELASTISLIDE_OPTION_SLIDE1_LOC_LABEL"
 					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 					
 				<field
 					name="file1large"
-					type="text"
+					type="media"
 					default="media/jelastislide/1_large.jpg"
 					label="MOD_JELASTISLIDE_OPTION_SLIDE1_LARGE_LABEL"
 					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
@@ -194,14 +194,14 @@
 	
 				<field
 					name="file2"
-					type="text"
+					type="media"
 					default="media/jelastislide/2.jpg"
 					label="MOD_JELASTISLIDE_OPTION_SLIDE2_LOC_LABEL"
 					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 				
 				<field
 					name="file2large"
-					type="text"
+					type="media"
 					default="media/jelastislide/2_large.jpg"
 					label="MOD_JELASTISLIDE_OPTION_SLIDE2_LARGE_LABEL"
 					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
@@ -228,14 +228,14 @@
 	
 				<field
 					name="file3"
-					type="text"
+					type="media"
 					default="media/jelastislide/3.jpg"
 					label="MOD_JELASTISLIDE_OPTION_SLIDE3_LOC_LABEL"
 					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 					
 				<field
 					name="file3large"
-					type="text"
+					type="media"
 					default="media/jelastislide/3_large.jpg"
 					label="MOD_JELASTISLIDE_OPTION_SLIDE3_LARGE_LABEL"
 					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
@@ -261,14 +261,14 @@
 	
 				<field
 					name="file4"
-					type="text"
+					type="media"
 					default="media/jelastislide/4.jpg"
 					label="MOD_JELASTISLIDE_OPTION_SLIDE4_LOC_LABEL"
 					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 					
 				<field
 					name="file4large"
-					type="text"
+					type="media"
 					default="media/jelastislide/5_large.jpg"
 					label="MOD_JELASTISLIDE_OPTION_SLIDE4_LARGE_LABEL"
 					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
@@ -295,14 +295,14 @@
 	
 				<field
 					name="file5"
-					type="text"
+					type="media"
 					default="media/jelastislide/5.jpg"
 					label="MOD_JELASTISLIDE_OPTION_SLIDE5_LOC_LABEL"
 					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 					
 				<field
 					name="file5large"
-					type="text"
+					type="media"
 					default="media/jelastislide/5_large.jpg"
 					label="MOD_JELASTISLIDE_OPTION_SLIDE5_LARGE_LABEL"
 					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
@@ -329,14 +329,14 @@
 	
 				<field
 					name="file6"
-					type="text"
+					type="media"
 					default="media/jelastislide/6.jpg"
 					label="MOD_JELASTISLIDE_OPTION_SLIDE6_LOC_LABEL"
 					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 					
 				<field
 					name="file6large"
-					type="text"
+					type="media"
 					default="media/jelastislide/6_large.jpg"
 					label="MOD_JELASTISLIDE_OPTION_SLIDE6_LARGE_LABEL"
 					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
@@ -363,13 +363,13 @@
 	
 				<field
 					name="file7"
-					type="text"
+					type="media"
 					label="MOD_JELASTISLIDE_OPTION_SLIDE7_LOC_LABEL"
 					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 					
 				<field
 					name="file7large"
-					type="text"
+					type="media"
 					label="MOD_JELASTISLIDE_OPTION_SLIDE7_LARGE_LABEL"
 					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 
@@ -394,13 +394,13 @@
 			
 				<field
 					name="file8"
-					type="text"
+					type="media"
 					label="MOD_JELASTISLIDE_OPTION_SLIDE8_LOC_LABEL"
 					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 					
 				<field
 					name="file8large"
-					type="text"
+					type="media"
 					label="MOD_JELASTISLIDE_OPTION_SLIDE8_LARGE_LABEL"
 					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 
@@ -425,13 +425,13 @@
 	
 				<field
 					name="file9"
-					type="text"
+					type="media"
 					label="MOD_JELASTISLIDE_OPTION_SLIDE9_LOC_LABEL"
 					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 					
 				<field
 					name="file9large"
-					type="text"
+					type="media"
 					label="MOD_JELASTISLIDE_OPTION_SLIDE9_LARGE_LABEL"
 					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 
@@ -456,13 +456,13 @@
 	
 				<field
 					name="file10"
-					type="text"
+					type="media"
 					label="MOD_JELASTISLIDE_OPTION_SLIDE10_LOC_LABEL"
 					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 					
 				<field
 					name="file10large"
-					type="text"
+					type="media"
 					label="MOD_JELASTISLIDE_OPTION_SLIDE10_LARGE_LABEL"
 					description="MOD_JELASTISLIDE_OPTION_SLIDE_LOC_DESC" />
 
