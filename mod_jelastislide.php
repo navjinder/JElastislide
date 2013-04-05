@@ -127,5 +127,5 @@ ${'file'.$i.'link'} = $params->get('file'.$i.'link');
  <link rel="stylesheet" href="<?php echo $root ?>modules/mod_jelastislide/vari/elastislide.css" type="text/css" />
 
 	<!-- End JElastislide Carousel -->
-	<?php if ($credits == "yes") {echo '<a href=\'http://demo.navjinder.com/jelastislide-demo\' target=\'_blank\' ><small>JElastislide<small></a>' ;}?>
+	<?php if ($credits == "yes") {echo '<a href=\'http://demo.navjinder.com/jelastislide-demo\' target=\'_blank\' ><small>JElastislide</small></a>' ;}?>
 	</section>
